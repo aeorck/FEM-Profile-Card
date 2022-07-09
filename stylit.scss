@@ -7,6 +7,7 @@
 .attribution {
     font-size: 11px;
     text-align: center;
+    color:change-color($color: #2a1c35, $red: 1, $green: 2, $blue: 3, $hue: 0, $saturation: 0%, $lightness: 0%, $alpha: 1.0)
 
     a {
         color: hsl(228, 45%, 44%);
