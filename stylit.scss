@@ -152,3 +152,48 @@ main{
         font-weight: 700;
     }
 }
+
+@media (min-width:1440px) {
+
+
+    .maui{
+        @include maui;
+        height: 100%;
+        background-image: url(./images/bg-pattern-top.svg);
+        top: -70%;
+        left: -20%;
+        transform: rotateZ(180deg);
+        background-size: cover;
+    }
+    
+    .maui2{
+        @include maui;
+        background-image: url(./images/bg-pattern-bottom.svg);
+        bottom: -10%;
+        right: -20%;
+        height: 100%;
+        overflow-x: hidden;
+    
+    }
+    main{
+        @include rounded(10px,10px, 10px, 10px);
+        background-color: white;
+        position: relative;
+        margin: 0 auto;
+        margin-top: 10%;
+        width: 400px;
+        height: 400px;
+        padding-bottom: 20px;
+        margin-bottom: 40px;
+        .top-background{
+            background-image: url(./images/bg-pattern-card.svg);
+            background-size: cover;
+            height: 35%;
+            @include rounded(10px, 10px, 0, 0)
+           
+        }
+        
+    
+    }
+    
+}

@@ -130,4 +130,55 @@ main .victor img {
 .pff h1 {
   font-size: 18px;
   font-weight: 700;
+}
+
+@media (min-width: 1440px) {
+  .maui {
+    position: absolute;
+    width: 900px;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    background-image: url(./images/bg-pattern-top.svg);
+    top: -70%;
+    left: -20%;
+    transform: rotateZ(180deg);
+    background-size: cover;
+  }
+
+  .maui2 {
+    position: absolute;
+    width: 900px;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./images/bg-pattern-bottom.svg);
+    bottom: -10%;
+    right: -20%;
+    height: 100%;
+    overflow-x: hidden;
+  }
+
+  main {
+    border-radius: 10px 10px 10px 10px;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 400px;
+    height: 400px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+  }
+  main .top-background {
+    background-image: url(./images/bg-pattern-card.svg);
+    background-size: cover;
+    height: 35%;
+    border-radius: 10px 10px 0 0;
+  }
 }/*# sourceMappingURL=stylit.css.map */
