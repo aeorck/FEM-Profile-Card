@@ -22,29 +22,31 @@ body {
 
 .maui {
   position: absolute;
-  width: 50%;
-  height: 110%;
+  width: 900px;
+  height: 100%;
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
   z-index: -1;
+  height: 100%;
   background-image: url(./images/bg-pattern-top.svg);
-  top: -60%;
-  left: -10%;
+  top: -80%;
+  left: -20%;
+  transform: rotateZ(120deg);
   background-size: cover;
 }
 
 .maui2 {
   position: absolute;
-  width: 50%;
-  height: 110%;
+  width: 900px;
+  height: 100%;
   background-size: cover;
   background-position: 0 0;
   background-repeat: no-repeat;
   z-index: -1;
   background-image: url(./images/bg-pattern-bottom.svg);
-  bottom: -40%;
-  right: -10%;
+  bottom: -20%;
+  right: -20%;
   overflow-x: hidden;
 }
 
