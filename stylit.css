@@ -73,7 +73,7 @@ main .victor {
   left: 37%;
 }
 main .victor img {
-  border-radius: 50px 50px 50px 50px;
+  border-radius: 50% 50% 50% 50%;
   border: 5px solid rgb(255, 255, 255);
 }
 
