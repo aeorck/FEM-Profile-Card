@@ -32,7 +32,6 @@ body {
   background-image: url(./images/bg-pattern-top.svg);
   top: -80%;
   left: -10%;
-  transform: rotateZ(120deg);
   background-size: cover;
 }
 
@@ -56,10 +55,10 @@ main {
   position: relative;
   margin: 0 auto;
   margin-top: 90px;
-  width: 400px;
+  width: 450px;
   height: 400px;
-  padding-bottom: 20px;
-  margin-bottom: 40px;
+  padding-bottom: 40px;
+  margin-bottom: 30px;
 }
 main .top-background {
   background-image: url(./images/bg-pattern-card.svg);
@@ -78,12 +77,16 @@ main .victor img {
   border-radius: 50% 50% 50% 50%;
   border: 5px solid rgb(255, 255, 255);
 }
-
-.pff {
+main .pff {
   margin: 70px auto;
-  width: 90%;
+  width: 100%;
 }
-.pff .name-loc {
+main .pff .tak {
+  width: 100%;
+  border-bottom: solid 1px hsla(0deg, 0%, 59%, 0.527);
+  padding-bottom: 20px;
+}
+main .pff .tak .name-loc {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -91,24 +94,24 @@ main .victor img {
   margin: 0 auto;
   justify-content: space-between;
 }
-.pff .name-loc .loc {
+main .pff .tak .name-loc .loc {
   color: hsl(227deg, 10%, 46%);
 }
-.pff .name-loc .name-age {
+main .pff .tak .name-loc .name-age {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
   color: hsl(229deg, 23%, 23%);
-  width: 55%;
+  width: 60%;
   margin: 0 auto;
 }
-.pff .name-loc .name-age h2 {
+main .pff .tak .name-loc .name-age h2 {
   font-size: 18px;
   font-weight: 400;
   color: hsl(227deg, 10%, 46%);
 }
-.pff .stats-container {
+main .pff .stats-container {
   display: flex;
   width: 90%;
   margin: 0 auto;
@@ -116,18 +119,18 @@ main .victor img {
   justify-content: space-between;
   align-items: center;
 }
-.pff .stats-container .stats {
+main .pff .stats-container .stats {
   display: inherit;
   flex-direction: column;
   align-items: center;
   color: hsl(0deg, 0%, 59%);
 }
-.pff .stats-container .stats .num {
+main .pff .stats-container .stats .num {
   font-weight: 700;
   color: hsl(229deg, 23%, 23%);
   margin: 10px 0;
 }
-.pff h1 {
+main .pff h1 {
   font-size: 18px;
   font-weight: 700;
 }
@@ -148,7 +151,6 @@ main .victor img {
     transform: rotateZ(180deg);
     background-size: cover;
   }
-
   .maui2 {
     position: absolute;
     width: 900px;
@@ -163,7 +165,6 @@ main .victor img {
     height: 100%;
     overflow-x: hidden;
   }
-
   main {
     border-radius: 10px 10px 10px 10px;
     background-color: white;
@@ -180,5 +181,83 @@ main .victor img {
     background-size: cover;
     height: 35%;
     border-radius: 10px 10px 0 0;
+  }
+}
+@media (min-width: 375px) {
+  .maui {
+    position: absolute;
+    width: 900px;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    height: 100%;
+    background-image: url(./images/bg-pattern-top.svg);
+    top: -80%;
+    left: -80%;
+    background-size: cover;
+  }
+  .maui2 {
+    position: absolute;
+    width: 900px;
+    height: 100%;
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    z-index: -1;
+    background-image: url(./images/bg-pattern-bottom.svg);
+    bottom: -40%;
+    right: -20%;
+    overflow-x: hidden;
+  }
+  main {
+    width: 300px;
+  }
+  main .victor {
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    top: 20%;
+    left: 33%;
+  }
+  main .victor img {
+    border-radius: 50% 50% 50% 50%;
+    border: 5px solid rgb(255, 255, 255);
+  }
+  .pff {
+    margin: 70px auto;
+    width: 90%;
+  }
+  .pff .name-loc .loc {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .pff .name-loc .name-age {
+    width: 90%;
+  }
+  .pff .stats-container {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    margin-top: 10%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .pff .stats-container .stats {
+    display: inherit;
+    flex-direction: column;
+    align-items: center;
+    color: hsl(0deg, 0%, 59%);
+  }
+  .pff .stats-container .stats .num {
+    font-weight: 700;
+    color: hsl(229deg, 23%, 23%);
+    margin: 10px 0;
+  }
+  .pff h1 {
+    font-size: 18px;
+    font-weight: 700;
   }
 }/*# sourceMappingURL=stylit.css.map */
